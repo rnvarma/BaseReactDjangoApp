@@ -1,9 +1,8 @@
-
+require('bootstrap-loader');
 require("css/style.scss")
 
 var React = require('react')
 var ReactDOM = require('react-dom')
-var $ = require('jquery')
 
 function getCookie(name) {
   var cookieValue = null;

@@ -19,8 +19,11 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader', query: { presets:['react'] }}, // to transform JSX into JS
-      { test: /\.css$/, loader: "style-loader!css-loader" },
-      { test: /\.scss$/, loaders: ["style", "css", "sass"]}
+      { test: /\.css$/, loaders: ["style", "css", "postcss"]},
+      { test: /\.scss$/, loaders: ["style", "css", "postcss", "sass"]},
+      { test: /\.(jsx|js)$/, loader: 'imports?jQuery=jquery,$=jquery,this=>window'},
+      { test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url?limit=10000"},
+      { test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/, loader: 'file'},
     ],
   },
 
