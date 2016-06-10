@@ -8,7 +8,7 @@
   },
   "author": "rohan varma",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "babel": "^6.5.2",
     "babel-loader": "^6.2.4",
     "bootstrap-loader": "^1.0.10",
