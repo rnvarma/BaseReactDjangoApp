@@ -5,7 +5,7 @@ This is a blank django-backend/react-frontend web application that uses webpack 
 
 First, setup a python virtualenv (<code>pip install virtualenv</code>) with the following command:
 
-<code> virtualenv name_of_project</code>
+<code>virtualenv name_of_project</code>
 
 Then go into the environment and activate it with the following command (for macs, pcs are something else):
 
@@ -13,7 +13,7 @@ Then go into the environment and activate it with the following command (for mac
 
 Now clone the repository into your virtualenv:
 
-<code> git clone https://github.com/rnvarma/BaseReactDjangoApp</code>
+<code>git clone https://github.com/rnvarma/BaseReactDjangoApp</code>
 
 Now change into the repository folder for the next steps.
 
@@ -37,9 +37,15 @@ If you are using a pc, paste the following code into the file: <code>module.expo
 
 To launch server you need to launch the webpack server + django server:
 
-Webpack cmd: 
+Webpack cmd (MAC): 
+
 <code>./node_modules/.bin/webpack --config webpack.config.js --watch</code>
 
+Webpack cmd (PC): first change directories into node_modules/.bin/ and run the following
+
+<code>webpack --config ../../webpack-config.js --watch</code>
+
 Django cmd: 
+
 <code>python manage.py runserver</code>
 
