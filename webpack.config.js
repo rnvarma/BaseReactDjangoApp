@@ -1,6 +1,7 @@
 var path = require("path")
 var webpack = require('webpack')
 var BundleTracker = require('webpack-bundle-tracker')
+var local_path = require('./mac-pc-compatability.js')
 
 module.exports = {
   context: __dirname,
@@ -8,12 +9,12 @@ module.exports = {
   entry: './assets/js/index', // entry point of our app. assets/js/index.js should require other js modules and dependencies it needs
 
   output: {
-      path: path.resolve('./assets/bundles/'),
+      path: path.resolve(local_path + '/assets/bundles/'),
       filename: "[name]-[hash].js",
   },
 
   plugins: [
-    new BundleTracker({filename: './webpack-stats.json'}),
+    new BundleTracker({filename: local_path + '/webpack-stats.json'}),
   ],
 
   module: {
