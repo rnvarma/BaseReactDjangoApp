@@ -1,2 +1,6 @@
 .DS_Store
 *.pyc
+node_modules/*
+assets/bundles/*
+webpack-stats.json
+mac-pc-compatability.js
