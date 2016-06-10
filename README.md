@@ -4,6 +4,15 @@ This is a blank django-backend/react-frontend web application that uses webpack 
 <h2>Install dependencies</h2>
 
 <code>sudo pip install -r requirements.txt</code>
+<code>npm install</code>
+
+<h2>Configure Local Webpack Path (for mac/pc compatability)</h2>
+
+Create a file in the top-level called 'mac-pc-compatability.js'.
+
+If you are using a mac, paste the following code into the file: <code>module.exports = "."</code>
+
+If you are using a pc, paste the following code into the file: <code>module.exports = "../.."</code>
 
 <h2>Launch Server</h2>
 
