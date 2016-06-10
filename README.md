@@ -5,7 +5,7 @@ This is a blank django-backend/react-frontend web application that uses webpack 
 
 First, setup a python virtualenv (<code>pip install virtualenv</code>) with the following command:
 
-<code> virtualenv <name_of_project></code>
+<code> virtualenv name_of_project</code>
 
 Then go into the environment and activate it with the following command (for macs, pcs are something else):
 
