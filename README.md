@@ -4,6 +4,7 @@ This is a blank django-backend/react-frontend web application that uses webpack 
 <h2>Install dependencies</h2>
 
 <code>sudo pip install -r requirements.txt</code>
+
 <code>npm install</code>
 
 <h2>Configure Local Webpack Path (for mac/pc compatability)</h2>
